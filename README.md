@@ -13,6 +13,34 @@ As a Data Scientist, the objective of this project is to develop a machine learn
 Three machine learning models—Logistic Regression, Random Forest, and Artificial Neural Networks—are trained and evaluated to determine the most effective model for predicting employee attrition
 
 ## 📂 Dataset
+The dataset used in this project is the IBM HR Analytics Employee Attrition dataset, which is publicly available on Kaggle.
+
+- **Source:** https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset
+- **Number of Feature:** 35
+- **Number of Employees:** 1469
+- **Target Variable:** Attrition (Yes/No)
+- **Domain:** Human Resources
+- **Problem Type:** Binary Classification
+  
+### Dataset Features
+
+- **Age**
+- **MonthlyIncome**
+- **JobRole**
+- **JobSatisfaction**
+- **OverTime**
+- **YearsAtCompany**
+- **WorkLifeBalance**
+- The dataset contains demographic, job-related, compensation, and satisfaction features used to predict employee attrition.
+
+
+
+
+
+
+
+
+
 
 
 ...
