@@ -1,2 +1,5 @@
-# employee_attrition_prediction
-Predict whether an employee will attrition (y/n). With comparation model Linier Regrition, Random Forest, &amp; Artificial Neural Network.
+# Employee Attrition Prediction
+This project predict employee attrition using and comparing the performance of Linier Regrition, Random Forest, &amp; Artificial Neural Network.
+----
+
+## 📌 Project Overview
