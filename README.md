@@ -73,6 +73,7 @@ Numerical features were standardized using StandardScaler to ensure consistent f
 
 ## 📊 Explore Data Analysis (EDA)
 ### Attrition Distribution
+![Attrition Distribution](images/attrition_distribution.png)
 
 
 
