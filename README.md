@@ -45,31 +45,38 @@ The dataset used in this project is the IBM HR Analytics Employee Attrition data
 
 The initial inspection showed that the dataset contained both numerical and categorical features. No missing values or duplicate records were found, indicating that the dataset was generally clean and ready for preprocessing.
 
-### 🧹 Data Cleaning & Processing
+## 🧹 Data Cleaning & Processing
 Before training the machine learning models, the dataset was preprocessed to ensure all features were in a suitable format for model training.
 This included separating the target variable, encoding  categorical features, and feature scaling.
 
-#### 1. Separate Features and Target
+### 1. Separate Features and Target
 ```python
 y = employee_df['Attrition']
 X = employee_df.drop('Attrition', axis = 1)
 ```
 The target (Attrition) was separated from the input features before processing.
 
-#### 2. Encode Categorical Features
+### 2. Encode Categorical Features
 ```python
 encoder = OneHotEncoder('...')
 X_cat_array = encoder.fit_transform(X_cat)
 ```
 Categorical variables were converted into numerical representations using One-HotEncoding.
 
-#### 3. Feature Scaling
+### 3. Feature Scaling
 ```python
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 Numerical features were standardized using StandardScaler to ensure consistent feature scales and improve model performance.
+
+## 📊 Explore Data Analysis (EDA)
+### Attrition Distribution
+
+
+
+
 
 
 
