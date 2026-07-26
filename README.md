@@ -16,7 +16,7 @@ Three machine learning models—Logistic Regression, Random Forest, and Artifici
 The dataset used in this project is the IBM HR Analytics Employee Attrition dataset, which is publicly available on Kaggle.
 
 - **Source:** https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset
-- **Number of Feature:** 35
+- **Number of Featured :** 35
 - **Number of Employees:** 1469
 - **Target Variable:** Attrition (Yes/No)
 - **Domain:** Human Resources
@@ -32,6 +32,44 @@ The dataset used in this project is the IBM HR Analytics Employee Attrition data
 - **YearsAtCompany**
 - **WorkLifeBalance**
 - The dataset contains demographic, job-related, compensation, and satisfaction features used to predict employee attrition.
+
+## 🔍 Data Inspection
+| Inspection | Result |
+|------------|--------|
+| Number of Records | 1,470 |
+| Number of Features | 35 |
+| Missing Values | 0 |
+| Duplicate Records | 0 |
+| Data Types | Numerical & Categorical |
+| Target Variable | Attrition (Yes/No) |
+
+The initial inspection showed that the dataset contained both numerical and categorical features. No missing values or duplicate records were found, indicating that the dataset was generally clean and ready for preprocessing.
+
+### 🧹 Data Cleaning & Processing
+Before training the machine learning models, the dataset was preprocessed to ensure all features were in a suitable format for model training.
+This included separating the target variable, encoding  categorical features, and feature scaling.
+
+#### 1. Separate Features and Target
+```python
+y = employee_df['Attrition']
+X = employee_df.drop('Attrition', axis = 1)
+```
+The target (Attrition) was separated from the input features before processing.
+
+#### 2. Encode Categorical Features
+```python
+encoder = OneHotEncoder('...')
+X_cat_array = encoder.fit_transform(X_cat)
+```
+Categorical variables were converted into numerical representations using One-HotEncoding.
+
+#### 3. Feature Scaling
+```python
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
+Numerical features were standardized using StandardScaler to ensure consistent feature scales and improve model performance.
 
 
 
