@@ -163,7 +163,7 @@ The training and validation accuracy increased steadily throughout the training 
 Meanwhile, the training loss consistently decreased, while the validation loss stabilized after several epochs. This suggests that the model converged effectively with only a small gap between training and validation performance, indicating good generalization without significant overfitting.
 
 #### 1. Accuracy Curve
-![Accuracy Curve](images/accuracy_curve.png)
+![Accuracy Curve](images/accuracy_model.png)
 
 **Purpose :**
 To evaluate the learning progress of the Artificial Neural Network during training.
@@ -177,7 +177,7 @@ To evaluate the learning progress of the Artificial Neural Network during traini
 The accuracy curves indicate that the model learned effectively while maintaining stable performance on the validation dataset, demonstrating good generalization without significant overfitting.
 
 #### 2. Loss Curve
-![Loss Curve](images/loss_curve.png)
+![Loss Curve](images/loss_model.png)
 
 **Purpose :**
 To monitor changes in the training and validation loss during the learning process and assess whether the model converged effectively.
