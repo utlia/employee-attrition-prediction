@@ -72,6 +72,8 @@ X_test = scaler.transform(X_test)
 Numerical features were standardized using StandardScaler to ensure consistent feature scales and improve model performance.
 
 ## 📊 Explore Data Analysis (EDA)
+### Hitmap Correlation
+![Hitmap Correlation](images/hitmap_correlation.png)
 ### Attrition Distribution
 ![Attrition Distribution](images/attrition_distribution.png)
 
