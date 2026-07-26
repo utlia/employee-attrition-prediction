@@ -72,8 +72,20 @@ X_test = scaler.transform(X_test)
 Numerical features were standardized using StandardScaler to ensure consistent feature scales and improve model performance.
 
 ## 📊 Explore Data Analysis (EDA)
-### Hitmap Correlation
-![Hitmap Correlation](images/hitmap_correlation.png)
+### Correlation Heatmap
+![Correlation Heatmap](images/heatmap_eda.png)
+**Propose :**
+To identify relationships between numerical features and understand potential correlations before model development.
+
+**Key Insight :**
+- MonthlyIncome and JobLevels have a very strong positive correlation (0.95), indicating that employees in higher job levels generally earn higher salaries.
+- JobLevel and TotalWorkingYears are also strongly correlated (0.78), indicating that employees often progress to higher job levels as they gain more experience.
+- Age has a weak negative correlation with Attrition (-0.16), suggesting that older employees are slightly less likely to leave the company.
+
+**Why It Matters :**
+Understanding these relationships helps identify important patterns in the data before building a machine learning model.
+
+
 ### Attrition Distribution
 ![Attrition Distribution](images/attrition_distribution.png)
 
