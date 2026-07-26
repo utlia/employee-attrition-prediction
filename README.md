@@ -72,7 +72,20 @@ X_test = scaler.transform(X_test)
 Numerical features were standardized using StandardScaler to ensure consistent feature scales and improve model performance.
 
 ## 📊 Explore Data Analysis (EDA)
-### Correlation Heatmap
+### 1. Attrition Distribution (Countplot)
+![Attrition Distribution](images/attrition_distribution2.png)
+**Propose :**
+To examine the distribution of the target variable (employee attrition).
+
+**Key Insight :**
+- The dataset is imbalanced.
+- Most employees remained with the company (Attrition = 0).
+- Only a smaller proportion of employees left the company (Attrition = 1).
+
+**Why It Matters :**
+The class imbalance should be considered during model evaluation. Metrics such as Precision, Recall, and F1-score provide more informative performance assessment than Accuracy alone.
+
+### 2. Correlation Heatmap
 ![Correlation Heatmap](images/heatmap_eda.png)
 **Propose :**
 To identify relationships between numerical features and understand potential correlations before model development.
@@ -86,8 +99,34 @@ To identify relationships between numerical features and understand potential co
 Understanding these relationships helps identify important patterns in the data before building a machine learning model.
 
 
-### Attrition Distribution
-![Attrition Distribution](images/attrition_distribution.png)
+### 3. Overtime vs Attrition Distribution (Countplot)
+![Overtime Vs Attrition Distribution](images/overtime_vs_attrition.png)
+**Propose :**
+To examine the relationship between overtime work and employee attrition.
+
+**Key Insights :**
+- Most employees do not work overtime (OverTime = 0).
+- Employees who work overtime (OverTime = 1) show a noticeably higher proportion of attrition than those who do not.
+This suggests that overtime is associated with a higher likelihood of employee turnover.
+
+**Why It Matters :**
+Overtime may reflect increased workload or reduced work-life balance, making it an important feature for predicting employee attrition.
+
+
+### 4. Monthly Income by Job Role (Boxplot)
+![Boxplot With Jobrole](images/boxplot_monthlyincome_vs_jobrole.png)
+
+**Propose :**
+To compare the monthly income distribution across different job roles and identify salary variation within the organization. 
+
+**Key Insights :**
+- Managers have the highest median monthly income among all job roles.
+- Research Directors also receive high salaries but exhibit a wider income distribution, indicating greater variability in monthly income.
+- Sales Representatives, Laboratory Technicians, and Human Resources employees generally have lower monthly income compared with managerial positions.
+
+**Why It Matters :**
+Salary distribution differs substantially across job roles, suggesting that job position is an important characteristic of the workforce and may contribute to employee behaviour. This information provides useful context before building predictive models.
+
 
 
 
